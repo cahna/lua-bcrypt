@@ -3,6 +3,7 @@ OBJECTS = $(patsubst %.c,%.o,$(SOURCES))
 
 TARGET = bcrypt.so
 
+LUA_INCDIR=/usr/include/luajit-2.0
 LIBS = -lcrypto
 CFLAGS = -O2 -shared -fPIC -std=c99 -D_GNU_SOURCE -Wall -Wextra -Wno-nonnull -Wwrite-strings -Wformat=2 -DNDEBUG -Ilib/bcrypt
 
